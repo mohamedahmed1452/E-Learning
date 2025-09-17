@@ -1,0 +1,148 @@
+:root {
+  --bg: #0b0f17;
+  --surface: #111827;
+  --text: #e6eef8;
+  --muted: #9aa7bb;
+  --primary: #5b8dff;
+  --card: #1a2233;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(180deg, rgba(91, 141, 255, 0.2), transparent);
+  padding: 5rem 0;
+  color: var(--text);
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.category-card,
+.course-card {
+  background: var(--card);
+  border: none;
+  color: var(--text);
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover,
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-item img {
+  border: 2px solid var(--primary);
+}
+
+.accordion-item {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accordion-button {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--primary);
+  color: #fff;
+}
+
+.accordion-body {
+  background: var(--card);
+  color: var(--muted);
+}
+
+.footer-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
+.course-card {
+  background: var(--card);
+  border: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.course-card .card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.course-card .card-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.course-card .btn {
+  align-self: flex-start;
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.course-card .btn:hover {
+  background-color: #3a6ed0;
+}
+
+.social-icons a {
+  color: var(--muted);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+}
+
+.category-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--primary);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
